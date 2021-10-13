@@ -56,7 +56,9 @@ footer{
 
 /*****  End Starter Code ****/
 
-
+nav a:hover{
+  color: black;
+  font-weight: bold;
   /* Requirement 1 code here*/
 }
 
