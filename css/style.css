@@ -172,41 +172,16 @@ header{
   }
 
   .container{
-   
+    grid-template-columns: 50px, auto, 500px, auto, 50px;
+    grid-template-rows: 400px, 400px, 400px, 400px, 400px;
   }
 
-  
-
-  .about-image{
-  
+  .about, .clients, .method-image, .contact-image{
+    grid-column: 3/ span 2;
   }
 
-  .about{
-    
-  }
-
-  .method-image{
-    
-  }
-
-  .method{
-   
-  }
-
-  .clients-image{
-    
-  }
-
-  .clients{
-    
-  }
-
-  .contact-image{
-    
-  }
-
-  .contact{
-    
+  .method, .contact, .about-image, .clients-image{
+    grid-column: 2/ span 2;
   }
 
 }
