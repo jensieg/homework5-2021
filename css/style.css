@@ -108,11 +108,14 @@ nav a:hover{
 /* Remainder of requirements here: */
 
 header{
+  display: grid;
   background-attachment: fixed; /* Parallax effect */
   background-position: center; /* Parallax effect */
   background-size: cover; /* Parallax effect */
   color: white;
   height: 400px; /* Parallax effect */
+  grid-column: 1 / span -1;
+  grid-row: 1 / span 1;
 
   /* YOUR CODE HERE; */
 }
