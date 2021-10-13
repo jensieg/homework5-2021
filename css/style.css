@@ -56,14 +56,18 @@ footer{
 
 /*****  End Starter Code ****/
 
-nav a:hover{
+nav a{
   color: black;
   font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover{
+  text-decoration: underline;
   /* Requirement 1 code here*/
 }
 
   /* Requirement 2 code here*/
- /*This is a test commit*/
 
 
 .skip a{
@@ -73,17 +77,25 @@ nav a:hover{
   -webkit-transition: top 1s ease-out;
   transition: top 1s ease-out;
   z-index: 1;
+  position: absolute;
+  top: -40px;
 
   /* Requirement 3a code here*/
   
 }
 
 /* Requirement 3b code here*/
-
+.skip a: focus{
+  top: 0px;
+}
 
 /* Requirement 4 code here*/
-
-
+*:focus{
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-left: 2px solid;
+  border-right: 2px solid;
+}
 
 .container{
   /* Requirement 5 code here*/
