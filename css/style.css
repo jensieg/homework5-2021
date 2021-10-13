@@ -108,6 +108,7 @@ nav a:hover{
 /* Remainder of requirements here: */
 
 header{
+  display: grid;
   background-attachment: fixed; /* Parallax effect */
   background-position: center; /* Parallax effect */
   background-size: cover; /* Parallax effect */
@@ -120,32 +121,44 @@ header{
   /* YOUR CODE HERE; */
 }
 
-
-
-.about-image{
-  
+.about, .method, .client, .contacts{
+  /*Your Code Here*/
+  display: grid;
+  grid-column: 2/ span 1;
 }
 
-.about{
- 
+.about-image, .method-image, .client-image, .contacts-image{
+  grid-column: 1/ span -1;
+  max-height: 700px;
+  overflow: hidden;
+
 }
 
-.method-image{
- 
+.about, .about-image{
+ display: grid;
+ grid-row: 2/ span 1;
 }
 
-.method{
-  
+.method, .method-image{
+  display: grid;
+  grid-row: 3/ span 1;
 }
 
-/* You need to write some of your own selectors here */
+.clients, .clients-image{
+  display: grid;
+  grid-row: 4/ span 1;
+}
 
-
+.contact, .contact-image{
+  display: grid;
+  grid-row: 5/ span 1;
+}
 
 .text-block{
   background-color: rgba(255, 255, 255, .8);
   border: 10px solid black;
   padding: 30px;
+  align-self: center;
 
   /* Your code here */
 
