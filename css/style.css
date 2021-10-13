@@ -85,7 +85,7 @@ nav a:hover{
 }
 
 /* Requirement 3b code here*/
-.skip a: focus{
+.skip a:focus{
   top: 0px;
 }
 
@@ -121,17 +121,15 @@ header{
   /* YOUR CODE HERE; */
 }
 
-.about, .method, .client, .contacts{
+.about, .method, .client, .contact{
   /*Your Code Here*/
-  display: grid;
   grid-column: 2/ span 1;
 }
 
-.about-image, .method-image, .client-image, .contacts-image{
+.about-image, .method-image, .client-image, .contact-image{
   grid-column: 1/ -1;
   max-height: 700px;
   overflow: hidden;
-
 }
 
 .about, .about-image{
@@ -161,9 +159,15 @@ header{
 }
 
 @media screen and (min-width: 800px){
+  
+  img{
+    width: 100%;
+  }
+  
   nav{
-    padding: 30px 0;
-
+    padding: 30px 0px;
+    text-align: right;
+    align-self: center;
     /* Your code here */
   }
 
